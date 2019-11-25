@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="ToolsQA Test Suite">
+<listeners>
+<listener class-name="TestCases.TestBase"></listener>
+</listeners>
+	<test name="Regression Test">
+		<parameter name="env" value="Testappurl">
+		</parameter>
+		<classes>
+			<class name="TestCases.Test_ToolsQA_HomePage" />
+		</classes>
+	</test>
+</suite>

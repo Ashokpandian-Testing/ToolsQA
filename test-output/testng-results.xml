@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="ToolsQA Test Suite" duration-ms="43296" started-at="2019-11-25T18:59:09 IST" finished-at="2019-11-25T18:59:52 IST">
+    <groups>
+      <group name="HomePage">
+        <method signature="Test_ToolsQA_HomePage.Test01_TopMenu_InteractionsMenu()[pri:0, instance:TestCases.Test_ToolsQA_HomePage@51cdd8a]" name="Test01_TopMenu_InteractionsMenu" class="TestCases.Test_ToolsQA_HomePage"/>
+        <method signature="Test_ToolsQA_HomePage.Test02_TopMenu_WidgetMenu()[pri:2, instance:TestCases.Test_ToolsQA_HomePage@51cdd8a]" name="Test02_TopMenu_WidgetMenu" class="TestCases.Test_ToolsQA_HomePage"/>
+        <method signature="Test_ToolsQA_HomePage.Test03_TopMenu_ToolTipsMenu()[pri:1, instance:TestCases.Test_ToolsQA_HomePage@51cdd8a]" name="Test03_TopMenu_ToolTipsMenu" class="TestCases.Test_ToolsQA_HomePage"/>
+      </group> <!-- HomePage -->
+      <group name="Navigation">
+        <method signature="Test_ToolsQA_HomePage.Test01_TopMenu_InteractionsMenu()[pri:0, instance:TestCases.Test_ToolsQA_HomePage@51cdd8a]" name="Test01_TopMenu_InteractionsMenu" class="TestCases.Test_ToolsQA_HomePage"/>
+        <method signature="Test_ToolsQA_HomePage.Test02_TopMenu_WidgetMenu()[pri:2, instance:TestCases.Test_ToolsQA_HomePage@51cdd8a]" name="Test02_TopMenu_WidgetMenu" class="TestCases.Test_ToolsQA_HomePage"/>
+        <method signature="Test_ToolsQA_HomePage.Test03_TopMenu_ToolTipsMenu()[pri:1, instance:TestCases.Test_ToolsQA_HomePage@51cdd8a]" name="Test03_TopMenu_ToolTipsMenu" class="TestCases.Test_ToolsQA_HomePage"/>
+      </group> <!-- Navigation -->
+      <group name="Menu">
+        <method signature="Test_ToolsQA_HomePage.Test01_TopMenu_InteractionsMenu()[pri:0, instance:TestCases.Test_ToolsQA_HomePage@51cdd8a]" name="Test01_TopMenu_InteractionsMenu" class="TestCases.Test_ToolsQA_HomePage"/>
+        <method signature="Test_ToolsQA_HomePage.Test02_TopMenu_WidgetMenu()[pri:2, instance:TestCases.Test_ToolsQA_HomePage@51cdd8a]" name="Test02_TopMenu_WidgetMenu" class="TestCases.Test_ToolsQA_HomePage"/>
+        <method signature="Test_ToolsQA_HomePage.Test03_TopMenu_ToolTipsMenu()[pri:1, instance:TestCases.Test_ToolsQA_HomePage@51cdd8a]" name="Test03_TopMenu_ToolTipsMenu" class="TestCases.Test_ToolsQA_HomePage"/>
+      </group> <!-- Menu -->
+    </groups>
+    <test name="Regression Test" duration-ms="43296" started-at="2019-11-25T18:59:09 IST" finished-at="2019-11-25T18:59:52 IST">
+      <class name="TestCases.Test_ToolsQA_HomePage">
+        <test-method status="PASS" signature="initWebDriver(org.testng.ITestContext)[pri:0, instance:TestCases.Test_ToolsQA_HomePage@51cdd8a]" name="initWebDriver" is-config="true" duration-ms="11159" started-at="2019-11-25T18:59:09 IST" finished-at="2019-11-25T18:59:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5b444398]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initWebDriver -->
+        <test-method status="PASS" signature="launchURL(java.lang.String)[pri:0, instance:TestCases.Test_ToolsQA_HomePage@51cdd8a]" name="launchURL" is-config="true" duration-ms="15843" started-at="2019-11-25T18:59:20 IST" finished-at="2019-11-25T18:59:36 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testappurl]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method status="PASS" signature="Test01_TopMenu_InteractionsMenu()[pri:0, instance:TestCases.Test_ToolsQA_HomePage@51cdd8a]" name="Test01_TopMenu_InteractionsMenu" duration-ms="5138" started-at="2019-11-25T18:59:36 IST" finished-at="2019-11-25T18:59:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test01_TopMenu_InteractionsMenu -->
+        <test-method status="PASS" signature="launchURL(java.lang.String)[pri:0, instance:TestCases.Test_ToolsQA_HomePage@51cdd8a]" name="launchURL" is-config="true" duration-ms="7399" started-at="2019-11-25T18:59:41 IST" finished-at="2019-11-25T18:59:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testappurl]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method status="PASS" signature="Test03_TopMenu_ToolTipsMenu()[pri:1, instance:TestCases.Test_ToolsQA_HomePage@51cdd8a]" name="Test03_TopMenu_ToolTipsMenu" duration-ms="738" started-at="2019-11-25T18:59:48 IST" finished-at="2019-11-25T18:59:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test03_TopMenu_ToolTipsMenu -->
+        <test-method status="PASS" signature="launchURL(java.lang.String)[pri:0, instance:TestCases.Test_ToolsQA_HomePage@51cdd8a]" name="launchURL" is-config="true" duration-ms="563" started-at="2019-11-25T18:59:49 IST" finished-at="2019-11-25T18:59:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testappurl]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method status="PASS" signature="Test02_TopMenu_WidgetMenu()[pri:2, instance:TestCases.Test_ToolsQA_HomePage@51cdd8a]" name="Test02_TopMenu_WidgetMenu" duration-ms="715" started-at="2019-11-25T18:59:50 IST" finished-at="2019-11-25T18:59:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test02_TopMenu_WidgetMenu -->
+        <test-method status="PASS" signature="killDriver()[pri:0, instance:TestCases.Test_ToolsQA_HomePage@51cdd8a]" name="killDriver" is-config="true" duration-ms="1700" started-at="2019-11-25T18:59:50 IST" finished-at="2019-11-25T18:59:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killDriver -->
+      </class> <!-- TestCases.Test_ToolsQA_HomePage -->
+    </test> <!-- Regression Test -->
+  </suite> <!-- ToolsQA Test Suite -->
+</testng-results>
