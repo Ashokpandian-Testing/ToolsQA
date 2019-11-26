@@ -61,7 +61,7 @@ public class TestBase implements ITestListener {
 	softassert = new SoftAssert();
 	PropertyConfigurator.configure("log4j.properties");
 	String Date = new SimpleDateFormat("ddmmyyyyhhmmss").format(new Date());
-	htmlreporter = new ExtentHtmlReporter(System.getProperty("user.dir") +"/extentreport_"+context.getName()+Date+".html");
+	htmlreporter = new ExtentHtmlReporter(System.getProperty("user.dir") +"/extentreport_"+context.getName()+".html");
 	extentreport.attachReporter(htmlreporter);
 	htmlreporter.config().setReportName(context.getName());
 	extentreport.setSystemInfo("Test Browser",getConfigPropValue("browser"));

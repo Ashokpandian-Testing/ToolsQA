@@ -9,60 +9,101 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">ToolsQA Test Suite</th></tr>
-<tr><td><a href="#t0">Regression Test</a></td><td class="num">0</td><td class="num attn">3</td><td class="num">0</td><td class="num">0</td><td class="num">21,328</td><td>Menu</td><td></td></tr>
+<tr><td><a href="#t0">Regression Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">54,766</td><td>Interactions, Menu</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ToolsQA Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="5">TestCases.Test_ToolsQA_HomePage</td><td><a href="#m0">initWebDriver</a></td><td rowspan="1">1574756040987</td><td rowspan="1">21173</td></tr><tr class="failedeven"><td><a href="#m1">killDriver</a></td><td rowspan="1">1574756062302</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m2">launchURL</a></td><td rowspan="3">1574756062269</td><td rowspan="3">5</td></tr><tr class="failedeven"><td><a href="#m3">launchURL</a></td></tr><tr class="failedeven"><td><a href="#m4">launchURL</a></td></tr><tr><th colspan="4">Regression Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="3">TestCases.Test_ToolsQA_HomePage</td><td><a href="#m5">Test01_TopMenu_InteractionsMenu</a></td><td rowspan="1">1574756062255</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m6">Test02_TopMenu_WidgetMenu</a></td><td rowspan="1">1574756062292</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m7">Test03_TopMenu_ToolTipsMenu</a></td><td rowspan="1">1574756062278</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ToolsQA Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestCases.Test_ToolsQA_HomePage</td><td><a href="#m0">Test02_TopMenu_WidgetMenu</a></td><td rowspan="1">1574772822784</td><td rowspan="1">5047</td></tr><tr class="failedodd"><td rowspan="1">TestCases.Test_ToolsQA_InteractionsPage</td><td><a href="#m1">Test02_Interactions_Resizeable</a></td><td rowspan="1">1574772841973</td><td rowspan="1">6507</td></tr><tr><th colspan="4">Regression Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">TestCases.Test_ToolsQA_HomePage</td><td><a href="#m2">Test01_TopMenu_InteractionsMenu</a></td><td rowspan="1">1574772819513</td><td rowspan="1">1110</td></tr><tr class="passedeven"><td><a href="#m3">Test03_TopMenu_ToolTipsMenu</a></td><td rowspan="1">1574772821385</td><td rowspan="1">786</td></tr><tr class="passedodd"><td rowspan="2">TestCases.Test_ToolsQA_InteractionsPage</td><td><a href="#m4">Test01_Interactions_Selectable</a></td><td rowspan="1">1574772849488</td><td rowspan="1">4844</td></tr><tr class="passedodd"><td><a href="#m5">Test02_Interactions_Droppable</a></td><td rowspan="1">1574772828836</td><td rowspan="1">12475</td></tr></tbody>
 </table>
-<h2>Regression Test</h2><h3 id="m0">TestCases.Test_ToolsQA_HomePage#initWebDriver</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@31c88ec8</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+<h2>Regression Test</h2><h3 id="m0">TestCases.Test_ToolsQA_HomePage#Test02_TopMenu_WidgetMenu</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@id=&apos;menu-top&apos;]/ul[3]&quot;}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
 System info: host: &apos;VD-MDU-MMA12&apos;, ip: &apos;10.169.74.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: D:\Users\ashokpandian.s\App...}, goog:chromeOptions: {debuggerAddress: localhost:53659}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7b0fe064b15f132f37fb089762330190
+*** Element info: {Using=xpath, value=//ul[@id=&apos;menu-top&apos;]/ul[3]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at TestCases.TestBase.initWebDriver(TestBase.java:59)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:43889/status] to be available after 20009 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 33 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.util.concurrent.FutureTask.get(Unknown Source)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 34 more
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestCases.Test_ToolsQA_HomePage#killDriver</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at TestCases.TestBase.killDriver(TestBase.java:90)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">TestCases.Test_ToolsQA_HomePage#launchURL</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Testappurl</td><td>public static void TestCases.Test_ToolsQA_HomePage.Test03_TopMenu_ToolTipsMenu()</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException
-	at TestCases.TestBase.launchURL(TestBase.java:101)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at TestCases.Test_ToolsQA_HomePage.Test02_TopMenu_WidgetMenu(Test_ToolsQA_HomePage.java:45)
 	at java.util.ArrayList.forEach(Unknown Source)
 ... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">TestCases.Test_ToolsQA_HomePage#launchURL</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Testappurl</td><td>public static void TestCases.Test_ToolsQA_HomePage.Test01_TopMenu_InteractionsMenu()</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException
-	at TestCases.TestBase.launchURL(TestBase.java:101)
+<h3 id="m1">TestCases.Test_ToolsQA_InteractionsPage#Test02_Interactions_Resizeable</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;VD-MDU-MMA12&apos;, ip: &apos;10.169.74.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
+	at java.util.LinkedHashMap$LinkedValues.forEach(Unknown Source)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at TestCases.Test_ToolsQA_InteractionsPage.Test02_Interactions_Resizeable(Test_ToolsQA_InteractionsPage.java:82)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">TestCases.Test_ToolsQA_HomePage#launchURL</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Testappurl</td><td>public static void TestCases.Test_ToolsQA_HomePage.Test02_TopMenu_WidgetMenu()</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException
-	at TestCases.TestBase.launchURL(TestBase.java:101)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">TestCases.Test_ToolsQA_HomePage#Test01_TopMenu_InteractionsMenu</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at TestCases.TestBase.launchURL(TestBase.java:101)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">TestCases.Test_ToolsQA_HomePage#Test02_TopMenu_WidgetMenu</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at TestCases.TestBase.launchURL(TestBase.java:101)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">TestCases.Test_ToolsQA_HomePage#Test03_TopMenu_ToolTipsMenu</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at TestCases.TestBase.launchURL(TestBase.java:101)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;VD-MDU-MMA12&apos;, ip: &apos;10.169.74.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
+		at org.openqa.selenium.json.Json.toJson(Json.java:44)
+		... 36 more
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
+	... 48 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.ui\-resizable\-handle\ ui\-resizable\-se\ ui\-icon\ ui\-icon\-gripsmall\-diagonal\-se&quot;}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;VD-MDU-MMA12&apos;, ip: &apos;10.169.74.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: D:\Users\ashokpandian.s\App...}, goog:chromeOptions: {debuggerAddress: localhost:53659}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7b0fe064b15f132f37fb089762330190
+*** Element info: {Using=class name, value=ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
+	... 53 more
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestCases.Test_ToolsQA_HomePage#Test01_TopMenu_InteractionsMenu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestCases.Test_ToolsQA_HomePage#Test03_TopMenu_ToolTipsMenu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">TestCases.Test_ToolsQA_InteractionsPage#Test01_Interactions_Selectable</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">TestCases.Test_ToolsQA_InteractionsPage#Test02_Interactions_Droppable</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

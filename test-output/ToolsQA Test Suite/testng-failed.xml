@@ -9,16 +9,23 @@
     <groups>
       <run>
         <include name="Menu"/>
+        <include name="Interactions"/>
       </run>
     </groups>
     <classes>
+      <class name="TestCases.Test_ToolsQA_InteractionsPage">
+        <methods>
+          <include name="launchURL"/>
+          <include name="initWebDriver"/>
+          <include name="Test02_Interactions_Resizeable"/>
+          <include name="killDriver"/>
+        </methods>
+      </class> <!-- TestCases.Test_ToolsQA_InteractionsPage -->
       <class name="TestCases.Test_ToolsQA_HomePage">
         <methods>
           <include name="launchURL"/>
           <include name="Test02_TopMenu_WidgetMenu"/>
           <include name="initWebDriver"/>
-          <include name="Test01_TopMenu_InteractionsMenu"/>
-          <include name="Test03_TopMenu_ToolTipsMenu"/>
           <include name="killDriver"/>
         </methods>
       </class> <!-- TestCases.Test_ToolsQA_HomePage -->

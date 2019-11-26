@@ -1,5 +1,7 @@
 package TestCases;
 
+import java.awt.AWTException;
+import java.awt.Robot;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -17,6 +19,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.sun.corba.se.impl.orbutil.GetPropertyAction;
+import com.sun.glass.events.KeyEvent;
 
 import Pages.ToolsQA_Home_Page;
 import Pages.ToolsQA_Interactions_Page;
@@ -24,7 +27,7 @@ import Pages.ToolsQA_Interactions_Page;
 //@Listeners(TestCases.TestBase.class)
 public class Test_ToolsQA_HomePage extends TestBase {
 	
-	@Test(priority=0, groups= {"Navigation","HomePage","Menu"})
+	@Test(priority=0, groups= {"Navigation","HomePage","Menu"}, alwaysRun=true)
 	public static void Test01_TopMenu_InteractionsMenu() {
 //		extentlog = extentreport.createTest("Interaction Menu - Navigation Check");
 		PageFactory.initElements(TestBase.driver, ToolsQA_Home_Page.class);
@@ -57,10 +60,7 @@ public class Test_ToolsQA_HomePage extends TestBase {
 		extentlog.log(Status.PASS, MarkupHelper.createLabel("Tooltip Menu Navigation is successful !", ExtentColor.BLUE));
 	}
 	
-	
 
-
-	
 	
 	
 
