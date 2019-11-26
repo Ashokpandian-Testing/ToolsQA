@@ -6,6 +6,11 @@
   </listeners>
   <test thread-count="5" name="Regression Test(failed)">
     <parameter name="env" value="Testappurl"/>
+    <groups>
+      <run>
+        <include name="Menu"/>
+      </run>
+    </groups>
     <classes>
       <class name="TestCases.Test_ToolsQA_HomePage">
         <methods>

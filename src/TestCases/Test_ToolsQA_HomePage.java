@@ -26,7 +26,7 @@ public class Test_ToolsQA_HomePage extends TestBase {
 	
 	@Test(priority=0, groups= {"Navigation","HomePage","Menu"})
 	public static void Test01_TopMenu_InteractionsMenu() {
-		extentlog = extentreport.createTest("Interaction Menu - Navigation Check");
+//		extentlog = extentreport.createTest("Interaction Menu - Navigation Check");
 		PageFactory.initElements(TestBase.driver, ToolsQA_Home_Page.class);
 		ToolsQA_Home_Page.InteractionsMenu.click();
 		PageFactory.initElements(TestBase.driver, ToolsQA_Interactions_Page.class);		
@@ -37,7 +37,7 @@ public class Test_ToolsQA_HomePage extends TestBase {
 	
 	@Test(priority=2, groups= {"Navigation","HomePage","Menu"})
 	public static void Test02_TopMenu_WidgetMenu() {
-		extentlog = extentreport.createTest("Widget Menu - Navigation Check");
+//		extentlog = extentreport.createTest("Widget Menu - Navigation Check");
 		PageFactory.initElements(TestBase.driver, ToolsQA_Home_Page.class);
 		ToolsQA_Home_Page.WidgetsMenu.click();
 		PageFactory.initElements(TestBase.driver, ToolsQA_Interactions_Page.class);		
@@ -48,7 +48,7 @@ public class Test_ToolsQA_HomePage extends TestBase {
 	
 	@Test(priority=1, groups= {"Navigation","HomePage","Menu"})
 	public static void Test03_TopMenu_ToolTipsMenu() {
-		extentlog = extentreport.createTest("Tooltips Menu - Navigation Check");
+//		extentlog = extentreport.createTest("Tooltips Menu - Navigation Check");
 		PageFactory.initElements(TestBase.driver, ToolsQA_Home_Page.class);
 		ToolsQA_Home_Page.TooltipsMenu.click();
 		PageFactory.initElements(TestBase.driver, ToolsQA_Interactions_Page.class);		

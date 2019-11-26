@@ -10,7 +10,7 @@ public class ToolsQA_Home_Page {
 	@FindBy(xpath="//ul[@id='menu-top']/li[2]")
 	public static WebElement InteractionsMenu;
 	
-	@FindBy(xpath="//ul[@id='menu-top']/li[3]")
+	@FindBy(xpath="//ul[@id='menu-top']/ul[3]")
 	public static WebElement WidgetsMenu;
 	
 	@FindBy(xpath="//ul[@id='menu-top']/li[4]")
